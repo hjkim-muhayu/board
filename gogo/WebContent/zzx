@@ -1,0 +1,25 @@
+show databases;
+
+create table board(
+id int not null AUTO_INCREMENT PRIMARY KEY,
+username varchar(45) not null,
+title varchar(45) not null,
+memo varchar(45),
+time datetime,
+hit int(11),
+ref int(11),
+indent int(11),
+step int(11),
+password varchar(30)
+);
+
+drop table board;
+
+select *
+from board;
+
+insert into board values('1','해피용','첫번쨰 글 ㅠㅠ','ㅋㅋㅋ',now(),0,0,0,0);
+insert into board values('2','해피용','뒤지는줄 알았다.','ㅋㅋㅋ',now(),0,0,0,0);
+
+
+
