@@ -1,0 +1,43 @@
+show databases;
+
+create table board(
+id int not null AUTO_INCREMENT PRIMARY KEY,
+username varchar(45) not null,
+title varchar(45) not null,
+memo varchar(45),
+time datetime,
+hit int(11),
+step int(11),
+password varchar(30)
+);
+
+drop table board;
+
+select *
+from board;
+
+insert into board values(null,'해피용','시간테스트','테스트',20160508,0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+insert into board values(null,'해피용','테스트','테스트',now(),0,0,'123');
+
+select count(*)
+from board;
+
+select *
+from board
+order by id desc, step asc;
+
+select id, username, title, time, hit
+from board
+where step >= 1 and step <= 5
+order by step asc;

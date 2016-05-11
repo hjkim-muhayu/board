@@ -14,11 +14,11 @@ pageEncoding="UTF-8"
 </head>
 <body>
 <%
-Class.forName("com.mysql.jdbc.Driver");
+	Class.forName("com.mysql.jdbc.Driver");
 
-String url = "jdbc:mysql://localhost:3306/good";
-String id = "goodid";
-String pass = "goodpw";
+	String url = "jdbc:mysql://localhost:3306/good";
+	String id = "goodid";
+	String pass = "goodpw";
 
 	String password = "";
 	
